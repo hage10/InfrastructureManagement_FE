@@ -15,7 +15,7 @@ export class BaseService {
   constructor(private router: Router, private messageService: MessageService) {
     this.apiController = '';
     this.BaseAPIConfig = axios.create({
-      baseURL: "https://infrastructure-management.herokuapp.com/"
+      baseURL: "https://localhost:44310/"
     });
 
     this.BaseAPIConfig.interceptors.request.use((config: any) => {
